@@ -1,0 +1,2 @@
+class SpotOverview < ApplicationRecord
+end

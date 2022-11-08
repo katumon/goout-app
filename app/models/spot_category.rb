@@ -1,0 +1,2 @@
+class SpotCategory < ApplicationRecord
+end

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>GooutApp</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= javascript_importmap_tags %>
+  </head>
+  <header>
+  <div class="header-logo">
+    雨の日、お出かけ行こーよ！(関東限定)
+  </div>
+  <ul class="header-menus">
+    <li>
+      
+    </li>
+  </ul>
+</header>
+  <body>
+    <%= yield %>
+  </body>
+</html>
