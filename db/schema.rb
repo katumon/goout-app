@@ -10,47 +10,27 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_11_08_133301) do
+ActiveRecord::Schema[7.0].define(version: 2022_11_11_121538) do
   create_table "spot_categories", force: :cascade do |t|
     t.string "name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
-  create_table "spot_cats", force: :cascade do |t|
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "spot_details", force: :cascade do |t|
-    t.integer "number"
+  create_table "spots", force: :cascade do |t|
+    t.string "name"
+    t.text "info"
+    t.string "access"
     t.string "regular_holiday"
     t.string "address"
     t.string "public_link"
+    t.string "img_url"
+    t.integer "user_id"
     t.string "weekday_open_time"
     t.string "weekday_close_time"
     t.string "weekend_open_time"
     t.string "weekend_close_time"
     t.integer "fee"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "spot_overviews", force: :cascade do |t|
-    t.string "name"
-    t.text "info"
-    t.string "access"
-    t.integer "number"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.integer "spot_category"
-  end
-
-  create_table "spots", force: :cascade do |t|
-    t.text "detail"
-    t.string "access"
-    t.integer "open_time"
-    t.integer "close_time"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
