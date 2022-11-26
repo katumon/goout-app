@@ -1,4 +1,5 @@
 source "https://rubygems.org"
+gem 'bcrypt', '3.1.12'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby "3.1.2"
