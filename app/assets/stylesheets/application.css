@@ -101,6 +101,7 @@ table {
   border-radius:5px;
   box-shadow:1px 1px #a68b62;
   margin: 40px auto;
+  
 }
 .login-a{
     margin-top:30px;
@@ -152,6 +153,8 @@ table {
   border-radius:5px;
   box-shadow:1px 1px #a68b62;
   margin: 20px auto;
+  
+    
 }
 .cate-c{
   width:250px;
@@ -165,58 +168,7 @@ table {
   box-shadow:1px 1px #a68b62;
   margin: 40px auto;
 }
-.amusement-a{
-    font-size: 20px;
-}
-.amusement-b{
-    background-color:#e4c9c0;
-    margin-top:40px;
-    padding:20px;
-}
-.amusement-c{
-    font-weight: bold;
-    font-size: 16px;
-    padding-bottom:10px;
-}
-.aquarium-a{
-    font-size: 20px;
-}
-.aquarium-b{
-    background-color:#e4c9c0;
-    margin-top:40px;
-    padding:20px;
-}
-.aquarium-c{
-    font-weight: bold;
-    font-size: 16px;
-    padding-bottom:10px;
-}
-.museum-a{
-    font-size: 20px;
-}
-.museum-b{
-    background-color:#e4c9c0;
-    margin-top:40px;
-    padding:20px;
-}
-.museum-c{
-    font-weight: bold;
-    font-size: 16px;
-    padding-bottom:10px;
-}
-.onsen-a{
-    font-size: 20px;
-}
-.onsen-b{
-    background-color:#e4c9c0;
-    margin-top:40px;
-    padding:20px;
-}
-.onsen-c{
-    font-weight: bold;
-    font-size: 16px;
-    padding-bottom:10px;
-}
+
 .season-a{
     font-size: 20px;
 }
