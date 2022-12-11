@@ -1,0 +1,52 @@
+<h1>新規投稿</h1>
+<%= form_for(@post, url: post_path) do |f| %>
+  <%= f.label :名前を入力してください %>
+  <br>
+  <%= f.text_field :name %>
+  <br>
+  <%= f.label :カテゴリーを選択してください %>
+  <br>
+  <%= f.select :spot_category_id, {'美術館':1, 'エンタメ':2, '温泉':3,'水族館':4,'季節のスポット':5}%>
+  <br>
+  <%= f.label :情報を140字以内で入力してください%>
+  <br>
+  <%= f.text_field :info %>
+  <br>
+  <%= f.label :交通アクセスを入力してください %>
+  <br>
+  <%= f.text_field :access %>
+  <br>
+  <%= f.label :定休日を入力してください%>
+  <br>
+  <%= f.text_field :regular_holiday %>
+  <br>
+  <%= f.label :住所を入力してください%>
+  <br>
+  <%= f.text_field :address %>
+  <br>
+  <%= f.label :公式リンクを入力してください%>
+  <br>
+  <%= f.text_field :public_link %>
+  <br>
+  <%= f.label :平日の営業開始時間を入力してください%>
+  <br>
+  <%= f.text_field :weekday_open_time %>
+  <br>
+  <%= f.label :平日の営業終了時間を入力してください%>
+  <br>
+  <%= f.text_field :weekday_close_time %>
+  <br>
+  <%= f.label :休日の営業開始時間を入力してください%>
+  <br>
+  <%= f.text_field :weekend_open_time %>
+  <br>
+  <%= f.label :休日の営業終了時間を入力してください%>
+  <br>
+  <%= f.text_field :weekend_close_time %>
+  <br>
+  <%= f.label :料金を入力してください%>
+  <br>
+  <%= f.number_field :fee %>
+  <br>
+  <%= f.submit "スポット追加" %>
+<% end %>

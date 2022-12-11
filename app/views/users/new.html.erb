@@ -1,10 +1,30 @@
-<h1>新規登録</h1>
+<h1 class='new-a'>新規登録</h1>
 <%= form_for(@user, url: signup_path) do |f| %>
-  <%= f.label :name %>
-  <%= f.text_field :name %>
-  <%= f.label :email %>
-  <%= f.email_field :email %>
-  <%= f.label :password %>
-  <%= f.password_field :password %>
-  <%= f.submit "Sign up" %>
+  <div class='new-b'>
+    <%= f.label :ユーザーネームを入力してください %>
+    <br>
+  </div>
+  <div class='new-c'>
+    <%= f.text_field :name %>
+    <br>
+  </div>
+  <div class='new-b'>
+    <%= f.label :メールアドレスを入力してください %>
+    <br>
+  </div>
+  <div class='new-c'>
+    <%= f.email_field :email %>
+    <br>
+  </div>
+  <div class='new-b'>
+    <%= f.label :パスワードを入力してください %>
+    <br>
+  </div>
+  <div class='new-c'>
+    <%= f.password_field :password %>
+    <br>
+  </div>
+  <div class='new-d'>
+    <%= f.submit "新規登録する" %>
+  </div>
 <% end %>

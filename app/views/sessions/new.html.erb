@@ -1,9 +1,24 @@
 
-<h1>ログイン</h1>
+<h1 class='login-a'>ログイン</h1>
+
 <%= form_for(:session, url: login_path) do |f| %>
-  <%= f.label :email %>
-  <%= f.email_field :email %>
-  <%= f.label :password %>
-  <%= f.password_field :password %>
-  <%= f.submit "Log in" %>
+  <div class='login-b'>
+    <%= f.label :メールアドレスを入力してください %>
+    <br>
+  </div>
+  <div class='login-c'>
+    <%= f.email_field :email %>
+    <br>
+  </div>
+  <div class='login-b'>
+    <%= f.label :パスワードを入力してください %>
+    <br>
+  </div>
+  <div class='login-c'>
+    <%= f.password_field :password %>
+    <br>
+  </div>
+  <div class='login-d'>
+    <%= f.submit "ログインする" %>
+  </div>
 <% end %>

@@ -10,9 +10,10 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_11_18_011116) do
+ActiveRecord::Schema[7.0].define(version: 2022_12_04_070644) do
   create_table "spot_categories", force: :cascade do |t|
     t.string "name"
+    t.string "url_name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -24,15 +25,15 @@ ActiveRecord::Schema[7.0].define(version: 2022_11_18_011116) do
     t.string "regular_holiday"
     t.string "address"
     t.string "public_link"
-    t.string "img_url"
     t.integer "user_id"
     t.string "weekday_open_time"
     t.string "weekday_close_time"
     t.string "weekend_open_time"
     t.string "weekend_close_time"
-    t.integer "fee"
+    t.string "fee"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "spot_category_id"
   end
 
   create_table "users", force: :cascade do |t|

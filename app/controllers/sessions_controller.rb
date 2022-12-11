@@ -12,6 +12,7 @@ class SessionsController < ApplicationController
       render 'new'
     end
   end
+  
   # 現在のユーザーをログアウトする
   def log_out
     session.delete(:user_id)

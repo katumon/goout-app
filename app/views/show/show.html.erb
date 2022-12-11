@@ -1,0 +1,30 @@
+<h1 class='season-a'><%= @spot_category.name%>のスポットの一覧<h1>
+<% @spot_category.spots.each do |season| %>
+  <div class='season-b'>
+    <div class='season-c'>
+    <%= season.name %><br>
+    <%= link_to "公式サイト", "#{season.public_link}" %>
+    <br><br>
+    </div>
+    <%= season.info %>
+    <br><br>
+    交通アクセス
+    <%= season.access %>
+    <br>
+    住所
+    <%= season.address %>
+    <br>
+    平日
+    <%= season.weekday_open_time %>
+    〜
+    <%= season.weekday_close_time %>
+    <br>
+    休日
+    <%= season.weekend_open_time %>
+    〜
+    <%= season.weekend_close_time %>
+    <br>
+    料金　<%= season.fee %>円
+    <br>
+  </div>
+<% end %>

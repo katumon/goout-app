@@ -1,3 +1,3 @@
 class SpotCategory < ApplicationRecord
-    has_many :spots_rb
+    has_many :spots
 end
