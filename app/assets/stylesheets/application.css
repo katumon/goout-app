@@ -182,3 +182,7 @@ table {
     font-size: 16px;
     padding-bottom:10px;
 }
+.link{
+  color:rgba(0, 0, 0, 0.486);
+  text-decoration: none;
+}
